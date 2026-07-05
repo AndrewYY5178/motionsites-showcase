@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: 'Inter', system-ui, sans-serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --color-anddream-lime: #D2FC31;
+  --color-anddream-dark: #0a0a0a;
+  --color-anddream-light: #fafafa;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: #fafafa;
+  color: #0a0a0a;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* AndDream single shadow identity */
+.anddream-shadow {
+  box-shadow: 0 2px 19px -4px rgba(1, 1, 63, 0.1);
+}
+
+/* Liquid glass effect */
+.liquid-glass {
+  background: rgba(255, 255, 255, 0.01);
+  background-blend-mode: luminosity;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.1);
+}
